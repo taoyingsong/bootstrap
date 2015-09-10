@@ -1,0 +1,86 @@
+//
+// Page Contents Variable
+//-------------------------
+.box-sizing() {
+	margin: 0 10%;
+	padding-top: 30px;
+}
+
+
+
+//
+// Page Contents
+// --------------------------
+html {
+	font-size: @font-size-html;
+}
+body {
+		font-size: @font-size-body;
+}
+#page-container {
+	padding-top: 80px;	
+}
+#logo {
+	max-height: 43px;
+}
+.navbar-shrink {
+	padding: 0;
+	transition: all 0.2s ease-in-out;
+}
+//#main-area { //removed
+.section { // added
+	padding: 50px 0;	
+}
+
+.guild {
+	text-align: center;
+	.box-sizing();
+}
+.guild-content {
+	margin-bottom: 30px;
+}
+
+.introduction {
+	.box-sizing();	
+	img {
+		width:100%;
+	}
+}
+.red-sys {
+	color:#f07171;
+}
+.go {
+	text-align: center;
+	padding: 50px 0;
+	background-color: #f07171;
+}
+
+
+.members {
+	padding: 30px 30px 34px;
+	background-color: #f5f5f5;
+	&:before {
+		content: "”";
+		font-size: 41px;
+		left: 50%;
+		position: absolute;
+		top: -16px;
+		background: #f5f5f5;
+		margin-left: -16px;
+		border-radius: 32px;
+		width: 32px;
+		height: 32px; 
+		border: 2px solid;
+		text-align: center;
+	}
+}
+.media-left img{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+}
+
+.container-content {
+	//padding: 50px 0;
+	padding-bottom: 50px;
+}

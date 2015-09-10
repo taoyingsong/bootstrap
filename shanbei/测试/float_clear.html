@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <title>如何在html中使用clearfix和clear</title>
+    
+    <style type="text/css">
+		.left { float: left; }
+		.right { float: right; }
+		.clear-left { clear: left; }
+		.clear-right { clear: right; }
+		.clear-both { clear: both; }
+		.clear-title { display: block; padding-top: 15px; clear: both; }
+		.clear-box { padding: 5px; margin: 8px auto; background-color: #eee; }
+    </style>
+</head>
+<body>
+<!--begin-->
+<strong class="clear-title">clear: left, 左侧抗浮动，右侧沦陷</strong>
+<div class="clear-box">
+    <img src="http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg" class="left">
+    <div class="clear-left">我不喜欢你，我不要和你在一起~</div>
+</div>
+<div class="clear-box">
+    <img src="http://image.zhangxinxu.com/image/study/s/s128/mm3.jpg" class="right">
+    <div class="clear-left">我不喜欢你，我不要和你在一起~</div>
+</div>
+<!--end-->
+
+
+
+<!--begin-->
+<strong class="clear-title">clear: right, 右侧抗浮动，左侧沦陷</strong>
+<div class="clear-box">
+    <img src="http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg" class="left">
+    <div class="clear-right">我不喜欢你，我不要和你在一起~</div>
+</div>
+<div class="clear-box">
+    <img src="http://image.zhangxinxu.com/image/study/s/s128/mm3.jpg" class="right">
+    <div class="clear-right">我不喜欢你，我不要和你在一起~</div>
+</div>
+<!--end-->
+
+
+
+<!--begin-->
+<strong class="clear-title">clear: left; float: left, 垂直环绕布局</strong>
+<div class="clear-box">
+    <img src="http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg" class="left">
+    <img src="2.png" class="left clear-left">
+    <div>我不喜欢你，我不要和你在一起~</div>
+</div>
+<!--end-->
+
+
+
+<!--begin-->
+<strong class="clear-title">clear: right; float: right, 垂直环绕布局</strong>
+<div class="clear-box">
+    <img src="http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg" class="right">
+    <img src="2.png" class="right clear-right">
+    <div>我不喜欢你，我不要和你在一起~字数不够多，怎么办，拷贝一段文字过来，如下：
+			第一个：我们公司今年去南京的几所高校进行校园招聘，我是面试组成员之一，我在面试的时候遇到了几个这样的学生，素质、情商、智商都是非常不错的，学着这个学校最NB的理科/工科专业（在全国排名也是前茅的），却死活要去做销售，结果是我们没要他，据我通过他们的同学了解，他们7月份毕业餐时仍然没有大公司愿意签他们。
+
+			第二个：我有一个朋友，前年毕业，不是很好的学校，学计算机专业的，我通过关系给他走了个后门进了一家不错的手机研发公司，去做安卓开发，现在最火的方向和职位了吧。他硬撑着干了一年，不干了，说自己的兴趣不在这个地方，不想做开发了，想去做销售，我都傻眼了，不过我没拦着。到现在，仍然在销售岗苦苦挣扎着，没有起色，但是他却对我说：痛并快乐着。
+
+			1、不要自我催眠
+			通过以往的实习、性格测试和咨询专业人士，发现自己并不是很适合干财务工作，对咨询，销售、市场和供应链管理等岗位比较合适，也想今后在这些岗位发展。 很多学生都会跟我说他们性格不适合做技术，还是想做销售，想和人打交道，但是你要注意两点：
+			你未入职场，你不知道在工作当中与上下级打交道和与客户打交道是什么样子的。
+			你未做真正商业类的技术项目，你不知道你是否真的不适合这个工种。
+			你是不是在逃避什么？与人打交道门槛低，容易上手；做技术难度大，会比较痛苦；扪心自问一下。
+			我看到的更多是他们的专业课挂到一塌糊涂，大学都没有正儿八经的学过专业课，就嚷嚷着自己学不好，不适合。结果又拿自己的不努力来做借口，来欺骗自己说：真的不喜欢。就这样的自我催眠，结果自己还真特么信了。
+
+			2、先试业再就业
+			我个人是比较赞同这个说法的，当你没有真正踏入社会时，你是不知道哪个是海市蜃楼，哪个是真的空中花园，这些只存在于你的想象中，你要学着我的那个朋友那样，先去做一年，等撞的头破血流的时候，再回来说：我真的不适合。
+
+			3、趁年轻，多折腾
+			这是袁岳的那句话，这个纵横沙场的职场老兵的劝诫是有道理的，趁着年轻多折腾几年，遇到不合适的就换个方向，但是注意你的心态：不是浮躁的换来换去，那样换来的只是30岁不立时的悔恨和无奈，要真正的去“折腾”，要狠下心在某一个方向扎下去，真的试过，不合适再换。还记得那个挖水的漫画吗？
+
+			4、从公司的角度再来说一下：公司的筛选是有成本的。
+			公司做校园招聘都是有成本的，而对口专业的学生是成本最低的，现在中国的大学哪里还是在雕琢灵魂，其实就是一个国家办的培训机构，就是为了4年后能顺利找个好工作，你想想同样是4年，我为什么放在学市场营销的同学不招，来找你学财务的学生来搞销售？
+
+			以上，仅供参考，祝你好运！
+	</div>
+</div>
+<!--begin-->
+</body>
+</html>
